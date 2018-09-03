@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{% for i in list %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label >{{ i.color_name }}</label>
+    <label style="background-color:{{ i.code }}">{{ i.code }}</label>
+    <br>
+{% endfor %}
+<button>fuck</button>
+</body>
+</html>
