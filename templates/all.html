@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <link href="path/to/math.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <html lang="en">
 <head>
     <style type="text/css">
@@ -10,9 +13,12 @@
 </head>
 <body>
 {% include 'base.html' %}
+<hr>
+<hr>
+<hr>
 {% for i in list %}
-    <label >{{ i.color_name }}</label>
-    <label style="background-color:{{ i.code }}">{{ i.code }}</label>
+    <div style="text-align: center;">{{ i.color_name }}</div>
+    <div style="background-color:{{ i.code }}">{{ i.code }}</div>
     <br>
 {% endfor %}
 <button>fuck</button>

@@ -13,3 +13,5 @@ def show(request):
     return render_to_response('all.html',c)
 def try_upload(request):
     return render_to_response('try-upload.html')
+def kiss(request):
+    return render_to_response('kiss.html')

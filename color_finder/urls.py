@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import settings
 
 import colorrun.views as show
 
@@ -23,4 +24,5 @@ urlpatterns = [
     path('show/', show.show),
     path('try/',show.try_upload),
     path('',show.void),
+    path('kiss/',show.kiss),
 ]
